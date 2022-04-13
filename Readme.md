@@ -1,4 +1,4 @@
-#Adventure 
+# Adventure 
 HTML5  Zelda (ADVENTURE Atari) Like Try out 
 
 This will be a Game development from start!
@@ -9,7 +9,7 @@ Im using a top down perspective
 
  
 
-#CONTROLS
+# CONTROLS
 
 
 Moving with arrows.
@@ -24,6 +24,6 @@ Space - roll
 
 
 
-#What is this
+# What is this
 
 Simple Html motor game 
