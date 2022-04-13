@@ -1,0 +1,83 @@
+
+   
+:root {
+   --pixel-size: 2px;
+   --grid-cell: calc( var(--pixel-size) * 16);
+   --bg: black;
+}
+
+.Entity{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 0px;
+    left: 0px;
+}
+.scene{
+   image-rendering: pixelated;
+}
+.Avatar{
+   
+}
+
+.stand-animation{
+    -webkit-animation: stand-animation 2s ease-in-out infinite;;
+    animation: stand-animation 2s ease-in-out infinite;;
+ } 
+  
+ 
+.move-animation{
+   -webkit-animation: walk-animation .5s ease-in-out infinite;;
+   animation: walk-animation .5s ease-in-out infinite;;
+} 
+
+ @-webkit-keyframes stand-animation {
+    from, 50%, to {
+      transform: scaleY(1) translate(0,0);
+    }
+  
+    25%, 75% {
+       transform: scaleY(.95) translate(0,.9px);
+    }
+  }
+  @-webkit-keyframes walk-animation {
+   from,50%, to {
+     transform:    rotate(0deg) translate(0,0);
+   }
+ 
+   25%  {
+      transform:  rotate(-2deg) translate(0,-1px);
+   }
+   75% {
+      transform:  rotate(2deg) translate(0,-1px);
+   }
+ }
+ .circle-particle{
+ 
+   width:1px;
+   height:1px;
+   background-color: white;
+   filter:brightness(200) drop-shadow(1px 0px 1px white);
+   border-radius:50%;
+} 
+
+
+
+.boulder-shadow{
+   border-radius: 50%;
+   background:#111111ab;
+}
+
+
+.shot{
+   background:yellow;
+   width:8px;
+   height: 8px;
+   border-radius: 50%;
+}
+
+.valign{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
